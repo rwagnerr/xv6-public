@@ -89,3 +89,9 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+int
+sys_lastc(void)
+{
+  return proc->lastc_two;
+}
